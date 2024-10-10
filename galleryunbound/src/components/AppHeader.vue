@@ -11,8 +11,7 @@
           <li><router-link to="/about">About</router-link></li>
           <li><router-link to="/products">Products</router-link></li>
           <li><router-link to="/contact">Contact</router-link></li>
-        <li><router-link to="/login">Login</router-link></li>
-
+          <li><router-link to="/login">Login</router-link></li>
         </ul>
       </nav>
     </div>
@@ -45,3 +44,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.header {
+  /* Add your styles here */
+}
+</style>

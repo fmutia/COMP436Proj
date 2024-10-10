@@ -1,24 +1,28 @@
 <template>
   <div id="app">
     <AppHeader />
-    <div class="artist-container">
+    <section class="artist-container"> 
       <h1 class="artist-name">Vincent Van Gogh</h1>
-    </div>
+    </section>
     <main>
-      <div class="button-container">
-        <router-link to="/Oil Paintings" class="button">
+      <section class="button-container">
+        <router-link to="/Paintings" class="button" aria-label="Navigate to Paintings">
           <img src="./assets/loyola2.png" alt="Paintings" />
-          <span>Oil Paintings</span>
+          <span>Paintings</span>
         </router-link>
-        <router-link to="/products" class="button">
-          <img src="./assets/loyola2.png" alt="Products" />
-          <span>Products</span>
+        <router-link to="/Drawings" class="button">
+          <img src="./assets/loyola2.png" alt="Drawings" aria-label="Navigate to Drawings"/>
+          <span>Drawings</span>
         </router-link>
-        <router-link to="/contact" class="button">
-          <img src="./assets/loyola2.png" alt="Contact" />
-          <span>Contact</span>
+        <router-link to="/Sculptures" class="button">
+          <img src="./assets/loyola2.png" alt="Sculptures" aria-label="Navigate to Sculptures"/>
+          <span>Sculptures</span>
         </router-link>
-      </div>
+        <router-link to="/Letters" class="button">
+          <img src="./assets/loyola2.png" alt="Letters" aria-label="Navigate to Letters"/>
+          <span>Letters</span>
+        </router-link>
+      </section>
       <!-- <img alt="Vue logo" src="./assets/logo.png">
       <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     </main>

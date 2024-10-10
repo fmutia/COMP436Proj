@@ -1,18 +1,26 @@
-
 <template>
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="footer-content">
-      <div class="social-media">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <img class="icon" :src="fbIcon" alt="Facebook" />
-        </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <img class="icon" :src="twitterIcon" alt="Twitter" />
-        </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <img class="icon" :src="igIcon" alt="Instagram" />
-        </a>
-      </div>
+      <h2 class="visually-hidden">Follow Us</h2> <!-- Added hidden heading for accessibility -->
+      <nav aria-label="Social Media Links"> <!-- Added navigation role for better semantics -->
+        <ul class="social-media">
+          <li>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <img class="icon" :src="fbIcon" alt="Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <img class="icon" :src="twitterIcon" alt="Twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <img class="icon" :src="igIcon" alt="Instagram" />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </footer>
 </template>
@@ -52,6 +60,12 @@ export default {
   display: flex; /* Use flexbox for horizontal alignment */
   justify-content: center; /* Center icons */
   gap: 10px; /* Space between icons */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.social-media li {
+  display: inline; /* Ensure list items display inline */
 }
 
 .icon {

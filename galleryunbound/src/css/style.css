@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Simple font */
+    margin: 0;
+    /* Removes default space around the page */
+    padding: 0;
+    /* Removes default space inside the page */
+    background-color: #e3e0e0;
+    /* Light gray background color */
+}
+
+/* Header styling */
+.header {
+    position: fixed;
+    /* Fixes the header at the top */
+    top: 0;
+    /* Aligns it to the top */
+    left: 0;
+    /* Aligns it to the left */
+    right: 0;
+    /* Aligns it to the right */
+    background-color: #333;
+    /* Background color */
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    /* Padding */
+    z-index: 1000;
+    /* Ensure it stays on top of other elements */
+    transition: transform 0.3s ease;
+    /* Smooth transition for hiding */
+}
+
+.hidden {
+    transform: translateY(-100%);
+    /* Move the header out of view */
+}
+
+.header-content {
+    display: flex;
+    /* Makes items line up in a row */
+    justify-content: space-between;
+    /* Space between the title and buttons */
+    align-items: center;
+    /* Aligns items in the center vertically */
+}
+
+.brand {
+    display: flex;
+    /* Flexbox for brand section */
+    align-items: center;
+    /* Center icon and text */
+}
+
+.brand-icon {
+    width: 50px;
+    /* Set icon size */
+    height: 50px;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Space between icon and name */
+}
+
+/* Styling for the main title */
+header h1 {
+    font-size: 28px;
+    /* Larger text size */
+    margin: 0;
+    /* No space around the title */
+}
+
+/* Area for the search bar and home button */
+.top-right {
+    display: flex;
+    /* Puts search bar and button next to each other */
+    align-items: center;
+    /* Centers them vertically */
+}
+
+/* Styling for the search bar */
+.search-bar {
+    padding: 5px;
+    /* Adds space inside the input */
+    margin-right: 15px;
+    /* Adds space to the right of the search bar */
+}
+
+/* Styling for the home button */
+.home-btn {
+    color: #fff;
+    /* White text */
+    text-decoration: none;
+    /* No underline */
+    padding: 8px 12px;
+    /* Adds space inside the button */
+    background-color: #555;
+    /* Medium gray background */
+    border-radius: 4px;
+    /* Rounded corners */
+}
+
+/* Navigation buttons styling */
+.nav-buttons {
+    text-align: center;
+    /* Centers the buttons */
+    margin: 40px 0;
+    /* Adds space above and below the buttons */
+}
+
+.nav-buttons button {
+    padding: 12px 20px;
+    /* Adds space inside the buttons */
+    margin: 0 10px;
+    /* Adds space between buttons */
+    font-size: 18px;
+    /* Makes the text larger */
+    cursor: pointer;
+    /* Changes the cursor to a pointer on hover */
+    border: 1px solid #333;
+    /* Dark gray border */
+    background-color: #fff;
+    /* White background */
+}
+
+/* Changes the button color when hovered */
+.nav-buttons button:hover {
+    background-color: #333;
+    /* Dark gray background on hover */
+    color: #fff;
+    /* White text on hover */
+}
+
+.nav ul {
+    list-style: none;
+    /* Remove default list styling */
+    display: flex;
+    /* Flexbox for horizontal list */
+    gap: 20px;
+    /* Space between links */
+}
+
+.nav a {
+    color: white;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.footer {
+    background-color: #333;
+    /* Gray background */
+    color: white;
+    /* Text color */
+    padding: 20px 0;
+    /* Adjust padding as needed */
+    text-align: center;
+    /* Center align text */
+    width: 100%;
+    /* Full width */
+    margin-top: auto;
+    /* Pushes footer to the bottom */
+}
+
+.footer-content {
+    max-width: 1200px;
+    /* Limit width */
+    margin: 0 auto;
+    /* Center content */
+}
+
+.social-media {
+    display: flex;
+    /* Use flexbox for horizontal alignment */
+    justify-content: center;
+    /* Center icons */
+    align-items: center;
+    /* Vertically align items */
+    flex-wrap: wrap;
+    /* Allow wrapping if needed */
+    gap: 10px;
+    /* Space between icons */
+}
+
+.icon {
+    width: 24px;
+    /* Set the size of the icons */
+    height: 24px;
+    /* Maintain aspect ratio */
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensures the app takes at least the full height of the viewport */
+}
+
+.artist-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 100px;
+    /* Space to avoid being covered by header */
+}
+
+.artist-name {
+    font-size: 2.5em;
+    /* Large font size for the artist's name */
+    color: #333;
+    /* Color for the text */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.button-container {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Center the buttons */
+    gap: 20px;
+    /* Space between buttons */
+    margin: 20px 0;
+    /* Space above and below the button container */
+}
+
+.button {
+    display: flex;
+    /* Use flexbox for button layout */
+    flex-direction: column;
+    /* Stack image and text */
+    align-items: center;
+    /* Center align items */
+    background-color: #fff;
+    /* Background color */
+    border: 1px solid #ccc;
+    /* Border color */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding */
+    text-decoration: none;
+    /* Remove underline */
+    transition: background-color 0.3s;
+    /* Smooth background color transition */
+    width: 150px;
+    /* Set a fixed width for buttons */
+}
+
+.button img {
+    width: 100px;
+    /* Image size */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 10px;
+    /* Space between image and text */
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Light gray background on hover */
+}

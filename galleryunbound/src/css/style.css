@@ -99,30 +99,66 @@ header h1 {
 }
 
 .footer {
-    background-color: #333; /* Gray background */
-    color: white; /* Text color */
-    padding: 20px 0; /* Adjust padding as needed */
-    text-align: center; /* Center align text */
-    width: 100%; /* Full width */
-    margin-top: auto; /* Pushes footer to the bottom */
+    background-color: #333;
+    /* Gray background */
+    color: white;
+    /* Text color */
+    padding: 20px;
+    /* Adjust padding as needed */
+    text-align: left;
+    /* left text and icons */
+    width: 100%;
+    /* Full width */
+    margin-top: auto;
+    /* Pushes footer to the bottom */
 }
 
-.footer-content {
-    max-width: 1200px; /* Limit width */
-    margin: 0 auto; /* Center content */
+.footer-title {
+    font-size: 1.5em;
+    /* Font size for the title */
+    margin-bottom: 10px;
+    /* Space between title and social icons */
 }
 
 .social-media {
-    display: flex; /* Use flexbox for horizontal alignment */
-    justify-content: center; /* Center icons */
-    align-items: center; /* Vertically align items */
-    flex-wrap: wrap; /* Allow wrapping if needed */
-    gap: 10px; /* Space between icons */
+    display: flex;
+    /* Use flexbox for horizontal alignment */
+    justify-content: center;
+    /* Center icons */
+    gap: 10px;
+    /* Space between icons */
+    list-style: none;
+    /* Remove default list styling */
+    padding: 0;
+    /* Remove padding */
+}
+
+.social-media li {
+  display: inline; /* Ensure list items display inline */
+}
+
+.footer-content {
+    display: flex;
+    /* Align items in a row */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: flex-start;
+    /* Center items */
+    width: 100%;
+    /* Full width */
 }
 
 .icon {
-    width: 24px; /* Set the size of the icons */
-    height: 24px; /* Maintain aspect ratio */
+    width: 24px;
+    /* Set the size of the icons */
+    height: 24px;
+    /* Maintain aspect ratio */
+}
+
+/* Optional: Add margin to footer content for spacing */
+.footer-content>* {
+    margin-right: 20px;
+    /* Add space between the social icons and other footer content */
 }
 
 #app {
